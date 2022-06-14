@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="animation" class="header-wrapper">
+
+        <div class="header" id="header">
+            <div id="checkbox-container" class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a id="btn-home" href="#header" onclick="voltaMenu()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#instagram" onclick="voltaMenu()">Insta <small>(Follow-me)</small></a>
+                            </li>
+                            <li>
+                                <a href="#projects" onclick="voltaMenu()">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <h1>Luís Marinelli</h1>
+        <h2>BackEnd Developer</h2>
+
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/lu%C3%ADs-marinelli-803429124/" target="_blank">Linkedin</a>
+            <a href="https://github.com/LuisMarinelli" target="_blank">Github</a>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div id="projects" class="card-container">
+            <div class="card-text"><small><i>Em meu Git-profile você verá alguns de meus repositórios de projetos
+                        pessoais, tais como:</i></small>
+                <li align="justify">
+                    Este site Aqui! <small>(DIO-Site-Personal)</small>
+                </li>
+
+                <li align="justify">
+                    Site de Gestão (ERP) com PHP/Laravel 8 + Bootstrap
+                </li>
+
+                <li align="justify">
+                    Site E-commerce MVC com PHP 7 + Bootstrap <small>(sem frameworks)</small>
+                </li>
+
+                <li align="justify">
+                    Site ERP completo com PHP 7 + Bootstrap <small>(sem frameworks)</small> para Igrejas/Templos de
+                    Matriz Africanas
+                </li>
+            </div>
+            <div class="card" id="github">
+                <div class="card-wrapper">
+                    <h2>Github</h2>
+                    <p>Veja meus projetos!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card" id="linkedin">
+                <div class="card-wrapper">
+                    <h2>Linkedin</h2>
+                    <p>Vem ver minha carreira profissional!</p>
+                </div>
+            </div>
+            <div class="card-text"><small><i>Em meu profile você verá minha experiência em:</i></small>
+                <li align="justify">
+                    Experiência em Liderar, Projetar/Arquitetar e Implementar sistema ERP's. Já realizada através de
+                    software JAVA com iReport e DataBase relacional. Tornando o software como a principal ferramenta de
+                    gerenciamento da empresa;
+                </li>
+
+                <li align="justify">
+                    Planejamento e execução de operações complexas de modelagem de dados (MER-Modelo
+                    Entidade-Relacionamento) através de DBMS/SGBD (Sistemas de Gerenciamento de Banco de Dados), podendo
+                    ser de multifunções, abrangendo o modelo conceitual até o modelo físico.
+                </li>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card-text">
+                <p align="justify">
+                    Para tornar mais visual a minha experiência nos projeto finais, criei a consultoria LMM-IT, nela você pode ver os resultados de projetos desenvolvidos por mim! Aproveite e me segue lá, para não perder nada! Até lá, no vemos próxima, ou mesma equipe ou como parceiros!</p>
+            </div>
+            <div class="card" id="instagram">
+                <div class="card-wrapper">
+                    <h2>Instagram</h2>
+                    <p>Ou mais do meu dia-a-dia ;)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Luís Miguel Marinelli Braga</span></strong>. Todos direitos reservados,
+                2022 -
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>.
+            </div>
+            <div class="credits">
+                Designed by <a href="https://github.com/SpruceGabriela">Gabriela Pinheiro - DIO Bootcammp Front-end</a>
+                &
+                Custom Development <a href="https://www.instagram.com/lmm.it/" target="_blank">LMM.it Consultoria</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function voltaMenu() {
+        document.getElementById('toggle').checked = false;
+    }
+</script>
